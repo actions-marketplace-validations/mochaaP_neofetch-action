@@ -1,0 +1,7 @@
+name: 'Show neofetch'
+description: 'Display system info using neofetch'
+runs:
+  using: 'composite'
+  steps:
+    - run: curl -s https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch | bash -s -- --config ${{ github.action_path }}/config.conf
+      shell: bash
