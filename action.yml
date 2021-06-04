@@ -1,5 +1,10 @@
 name: 'Show neofetch'
 description: 'Display system info using neofetch'
+
+branding:
+  icon: 'align-left'
+  color: 'gray-dark'
+
 runs:
   using: 'composite'
   steps:
